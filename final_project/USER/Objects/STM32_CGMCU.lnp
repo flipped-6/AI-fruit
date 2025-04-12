@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+".\objects\stm32f10x_it.o"
+".\objects\system_stm32f10x.o"
+".\objects\main.o"
+".\objects\led.o"
+".\objects\oled.o"
+".\objects\hx711.o"
+".\objects\key.o"
+".\objects\dp_print_lib.o"
+".\objects\delay.o"
+".\objects\usart.o"
+".\objects\sys.o"
+".\objects\core_cm3.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\misc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_adc.o"
+--library_type=microlib --strict --scatter ".\Objects\STM32_CGMCU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32_CGMCU.map" -o .\Objects\STM32_CGMCU.axf
